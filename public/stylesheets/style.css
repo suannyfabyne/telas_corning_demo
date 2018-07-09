@@ -1,0 +1,83 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+ .glyphicon {
+    font-size: 20px;
+    color: red;
+}
+
+
+#firstjumbotron {
+  
+  background-color: white;
+  width: 25%;
+  height: 300px;
+  margin-top: 100px;
+  position: absolute;
+  float: center;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);  border-radius: 2px;
+  
+}
+
+#exampleInputUser {
+  
+  margin-top: 20px;
+
+}
+
+#exampleInputSenha {
+  
+  margin-top: 10px;
+
+}
+
+#Enter{
+  margin-top: 40px;
+  align-content: center; 
+  width: 100%;
+}
+
+.container {
+  
+  display: flex;
+  justify-content: center;
+
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+
+}
