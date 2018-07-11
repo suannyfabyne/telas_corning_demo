@@ -23,6 +23,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   
 }
 
+
+#secondjumbotron {
+  
+  background-color: white;
+  width: 40%;
+  height: 500px;
+  margin-top: 100px;
+  position: absolute;
+  float: center;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);  border-radius: 2px;
+  
+}
+
 #exampleInputUser {
   
   margin-top: 20px;
@@ -51,7 +66,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: black;
   padding: 0.2em 0;
 }
 
@@ -66,6 +81,7 @@ body {
     max-width: 730px;
 
   }
+  
 
   /* Remove the padding we set earlier */
   .header,
@@ -80,4 +96,94 @@ body {
   }
   /* Remove the bottom border on the jumbotron for visual effect */
 
+}
+
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+body, html{
+     height: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Oxygen', sans-serif;
+      background-size: cover;
+}
+
+.main{
+  margin:50px 15px;
+}
+
+h1.title { 
+  font-size: 5px;
+  font-family: 'Passion One', cursive; 
+}
+
+hr{
+  width: 10%;
+  color: white;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+label{
+  margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+  background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+.form-control {
+    height: auto!important;
+padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    width: 100%;
+
+}
+#button {
+    margin-top: 30px;
+}
+.main-center{
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 400px;
+    padding: 10px 40px;
+  background: white;
+      color: black;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);  border-radius: 2px;
+}
+span.input-group-addon i {
+    color: black;
+    font-size: 17px;
+}
+
+.login-button{
+  margin-top: 5px;
+}
+
+.login-register{
+  font-size: 11px;
+  text-align: center;
 }
