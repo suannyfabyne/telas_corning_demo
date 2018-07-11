@@ -4,18 +4,6 @@
 <head>
 	<title>Dashboard | Klorofil - Free Bootstrap Dashboard Template</title>
 	<meta charset="utf-8">
-
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css" />
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
@@ -94,10 +82,9 @@
 					<ul class="nav">
 						<li><a href="index.html"><i class="lnr lnr-home"></i> <span>Inicio</span></a></li>
 						<li><a href="usuarios.html"><i class="lnr lnr-users"></i> <span>Usuários</span></a></li>
-						<li><a href="processamentos.html"><i class="lnr lnr-chart-bars"></i> <span>Processamentos</span></a></li>
-						<li><a class="active" href="fieldsfilling.html"><i class="lnr lnr-select"></i> <span>Iniciar Processo</span></a></li>
+						<li><a href="processamentos.html" class="active"><i class="lnr lnr-chart-bars"></i> <span>Processamentos</span></a></li>
+						<li><a  href="fieldsfilling.html"><i class="lnr lnr-select"></i> <span>Iniciar Processo</span></a></li>
 						<li><a class=""><i class="lnr lnr-cog"></i> <span>Configurações</span></a></li>
-
 					</ul>
 				</nav>
 			</div>
@@ -107,50 +94,74 @@
 		<div class="main">
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
-				
-	
-	<div class="container">
-		<div class="jumbotron" id="secondjumbotron">
-			<form>
-				<div class="row">
-
-				    <div class="form-group col-md-6">
-						<label for="name"><h7 style="text-align: center;"> N° do Lote </h7></label>
-			    		<input style="margin-top: -10px; " class="form-control"  placeholder="Ex: 659X04E45">
-			    	</div>
-
-			    	<div class="form-group col-md-6">
-			    		<label for="name"><h7 style="text-align: center;">Tamanho do Lote</h7></label>
-		    			<input style="margin-top: -10px;" class="form-control" placeholder="Ex: 203" type="number">		
-		    		</div>
-		    	</div>
-			    	<div class="form-group">
-
-						<label for="name" class="cols-sm-4 control-label" "><h6 style="text-align: center; margin-top: 10px;"> Tipo do conector </h6></label>
-						<select class="custom-select" style="font-size: 11px; color: grey; margin-top: -10px;" > 
-							 <option>101e</option>
-							 <option>102e</option>
-							 <option>103e</option>
-
-						</select>    	
-					</div>
-
-			    	<div class="form-group">
-						<label for="name" class="cols-sm-4 control-label" "><h6 > Máquina </h6>
-						</label>
-						<input class="form-control" id="exampleInputSenha" placeholder="Digite a máquina" style=" margin-top: -10px;">
-					</div>
-				<a href="processos.html"><button type="button" class="btn btn-primary" id="Enter"> Iniciar Processo </button></a>
-
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- TABLE STRIPED -->
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Lista de processamentos</h3>
+								</div>
+								<div class="panel-body">
+									<table class="table table-striped">
+										<thead>
+										<tr>
+											<th>Lote</th>
+											<th>Quantidade de peças</th>
+											<th>Peças sem defeitos</th>
+											<th>Peças com defeitos</th>
+											<th>Ações</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>195648</td>
+											<td>3000</td>
+											<td>2000</td>
+											<td>1000</td>
+											<td>
+												<a class="btn" href="relatorios.html"><i class="fa fa-eye"></i></a>
+												<button class="btn"><i class="fa fa-trash"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td>657654</td>
+											<td>3000</td>
+											<td>1500</td>
+											<td>1500</td>
+											<td>
+												<a class="btn" href="relatorios.html"><i class="fa fa-eye"></i></a>
+												<button class="btn"><i class="fa fa-trash"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td>3545377</td>
+											<td>3000</td>
+											<td>1700</td>
+											<td>1300</td>
+											<td>
+												<a class="btn" href="relatorios.html"><i class="fa fa-eye"></i></a>
+												<button class="btn"><i class="fa fa-trash"></i></button>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- END TABLE STRIPED -->
+						</div>
 				</div>
-			</form>
-		</div>
-	</div>
 			</div>
 			<!-- END MAIN CONTENT -->
 		</div>
 		<!-- END MAIN -->
-
+		<div class="clearfix"></div>
+		<footer>
+			<div class="container-fluid">
+				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
 	<!-- END WRAPPER -->
 	<!-- Javascript -->
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -198,75 +209,6 @@
 				data: [240, 350, 360, 380, 400, 450, 480, 523, 555, 600, 700, 800],
 			}]
 		};
-
-        new Chartist.Line('#demo-line-chart', data, options);
-
-        // bar chart
-        options = {
-            height: "300px",
-            axisX: {
-                showGrid: false
-            },
-        };
-
-        new Chartist.Bar('#demo-bar-chart', data, options);
-
-        // area chart
-        options = {
-            height: "270px",
-            showArea: true,
-            showLine: false,
-            showPoint: false,
-            axisX: {
-                showGrid: false
-            },
-            lineSmooth: false,
-        };
-
-        new Chartist.Line('#demo-area-chart', data, options);
-
-
-        // multiple chart
-        var data = {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            series: [{
-                name: 'series-real',
-                data: [200, 380, 350, 320, 410, 450, 570, 400, 555, 620, 750, 900],
-            }, {
-                name: 'series-projection',
-                data: [240, 350, 360, 380, 400, 450, 480, 523, 555, 600, 700, 800],
-            }]
-        };
-
-        var options = {
-            fullWidth: true,
-            lineSmooth: false,
-            height: "270px",
-            low: 0,
-            high: 'auto',
-            series: {
-                'series-projection': {
-                    showArea: true,
-                    showPoint: false,
-                    showLine: false
-                },
-            },
-            axisX: {
-                showGrid: false,
-
-            },
-            axisY: {
-                showGrid: false,
-                onlyInteger: true,
-                offset: 0,
-            },
-            chartPadding: {
-                left: 20,
-                right: 20
-            }
-        };
-
-        new Chartist.Line('#multiple-chart', data, options);
 
 		options = {
 			fullWidth: true,
